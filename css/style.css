@@ -7,6 +7,7 @@
     --text-color-footer-auth: rgba(255, 255, 255, 0.6);
     --bgc-color-secondary: #f5f4fa;
     --bgc-color: #2f303a;
+    --border-color: #eeeeee;
 }
 
 html {
@@ -27,6 +28,7 @@ body {
     font-weight: 400;
     font-size: 14px;
     letter-spacing: 0.03em;
+    width: 1600px;
 }
 
 h1,
@@ -39,7 +41,6 @@ p {
 
 .list {
     padding-inline: 0;
-
     margin: 0;
     padding: 0;
     list-style: none;
@@ -51,13 +52,11 @@ p {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 2px solid tomato;
 }
 
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
-    outline: 2px solid blue;
 }
 
 .section:nth-child(2n + 4) {
@@ -68,6 +67,7 @@ p {
 .header .logo {
     margin-right: 93px;
 }
+
 .logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -87,14 +87,15 @@ p {
 .logo-studio-down {
     color: var(--text-color-white);
 }
-
 /* /logo */
 
 /* NAVIGATION */
-
 .header {
     padding-top: 29px;
     padding-bottom: 25px;
+}
+.line {
+    border: 1px solid #ececec;
 }
 
 .header .container {
@@ -130,7 +131,6 @@ p {
 .nav-item {
     text-decoration: none;
     color: var(--primary-text-color);
-
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -159,13 +159,13 @@ p {
 .contacts-item:focus {
     color: var(--accent-color);
 }
-
 /* /NAVIGATION */
 
 /* HERO */
 .main-section {
     background-color: var(--bgc-color);
 }
+
 .main-section .container {
     padding: 200px 237px;
     text-align: center;
@@ -188,6 +188,10 @@ p {
     cursor: pointer;
     border-radius: 4px;
     border: 3px solid transparent;
+}
+
+.btn:active {
+    border-bottom-color: none;
 }
 
 .btn-primary {
@@ -218,7 +222,6 @@ p {
     color: var(--text-color-white);
     background-color: var(--accent-color);
 }
-
 /* /HERO */
 
 /* FEATURES */
@@ -372,7 +375,6 @@ p {
     color: var(--text-color-white);
     background-color: var(--accent-color);
 }
-
 /* /FILTERS */
 
 /* PROJECTS */
@@ -381,11 +383,9 @@ p {
     flex-wrap: wrap;
 }
 
-/* .projects .item + .item {
-    margin-left: 30px;
-} */
-
 .prodject-title {
+    margin-bottom: 4px;
+
     color: var(--primary-text-color);
     font-weight: 700;
 
@@ -395,8 +395,6 @@ p {
 }
 
 .prodject-text {
-    color: var(--primary-text-color);
-
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
@@ -406,7 +404,29 @@ p {
 .prodject-img {
     display: block;
     width: 370px;
+    border: 1px solid var(--border-color);
 }
 
-/* PROJECTS */
-/* /PORTFOLIO */
+.projects .item + .item {
+    margin-left: 30px;
+}
+
+.projects .item:nth-child(3n + 4) {
+    margin-left: 0;
+}
+
+.projects .item:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+}
+
+.prodject-dscr {
+    border: 1px solid var(--border-color);
+    padding: 20px 24px;
+}
+
+.projects .item {
+    margin-bottom: 30px;
+}
+
+/* /PROJECTS */
+/* /PORTFOLIO */ ;
