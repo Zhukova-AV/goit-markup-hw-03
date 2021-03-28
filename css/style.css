@@ -93,9 +93,7 @@ p {
 .header {
     padding-top: 29px;
     padding-bottom: 25px;
-}
-.line {
-    border: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
 }
 
 .header .container {
@@ -407,12 +405,13 @@ p {
     border: 1px solid var(--border-color);
 }
 
-.projects .item + .item {
-    margin-left: 30px;
+.projects .item {
+    margin-right: 30px;
+    margin-bottom: 30px;
 }
 
-.projects .item:nth-child(3n + 4) {
-    margin-left: 0;
+.projects .item:nth-child(3n) {
+    margin-right: 0;
 }
 
 .projects .item:nth-last-child(-n + 3) {
@@ -424,9 +423,9 @@ p {
     padding: 20px 24px;
 }
 
-.projects .item {
+/* .projects .item {
     margin-bottom: 30px;
-}
+} */
 
 /* /PROJECTS */
 /* /PORTFOLIO */ ;
